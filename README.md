@@ -137,42 +137,12 @@ nRFBOX is a wireless toolkit designed to explore, analyze, and interact with var
 
 <div>&nbsp;</div>
 
-## 🔗 Uploading the Firmware (.bin) to ESP32
+## 🔗 Uploading the Firmware (web flasher) to ESP32
 
-If you prefer not to upload the code manually or encounter errors during compilation, you can directly upload the precompiled `.bin` file to the ESP32. Follow these steps:
+<h1>nRFBox_V2_flasher</h1>
 
-### Step 1: Download the Required Tools
-1. **ESP32 Flash Download Tool**: Download the tool from Espressif's official site: [ESP32 Flash Download Tool](https://www.espressif.com/sites/default/files/tools/flash_download_tool_3.9.7_2.zip).
-2. **USB Drivers**: Make sure the drivers for the ESP32 are installed on your system. You can download the drivers from [CP210x USB to UART Bridge VCP Drivers](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers) if you're using the CP2102 chip.
+<p><a href="https://musaiyaf.github.io/nRFBox_V2_flasher/">webflasher</a></p>
 
-### Step 2: Prepare the `.bin` File
-1. Download the [precompiled `.bin`](https://github.com/cifertech/nRFBox/tree/main/precompiled%20%20bin) file from the repository. 
-
-### Step 3: Upload the `.bin` File to ESP32
-1. Connect your ESP32 to your computer using a USB cable.
-2. Open the **ESP32 Flash Download Tool** and configure the following:
-   - Select the appropriate **chip type** (ESP32) and click **OK**.
-   - In the **Download Path Config** section, add the `.bin` file and set the start address to `0x10000`.
-   - Select the correct **COM port** where your ESP32 is connected.
-   - Choose the correct **Baud rate** (115200 is generally recommended).
-
-3. Click on **Start** to begin uploading the `.bin` file to your ESP32.
-
-### Step 4: Verify the Upload
-Once the upload is completed, the tool will confirm a successful flash. You can now restart your ESP32 and run the firmware.
-
-&nbsp;
-### Arduino IDE Settings:
-If you want to upload the sketch code to the ESP32, use the following settings in the Tools menu:
-- Built using ESP32 Board Version 1.0.5
-
-<div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-  <img src="https://github.com/user-attachments/assets/2e43dc05-9ef7-4743-85f2-a8fc38e7b785" alt="Photo 1" style="width: 34%; border: 1px solid #ccc; border-radius: 5px;">
-  <img src="https://github.com/user-attachments/assets/9fc87b96-7442-44f8-9457-22d1b481eda1" alt="Photo 2" style="width: 53%; border: 1px solid #ccc; border-radius: 5px;">
-</div>
-
-
-<div>&nbsp;</div>
 
 <!-- License -->
 ## :warning: License
